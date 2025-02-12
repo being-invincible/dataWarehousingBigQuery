@@ -1,5 +1,4 @@
-# dataWarehousingBigQuery
- 
+# Data Warehousing - BigQuery
 ## Module of Data Engineering Zoomcamp 
 
 We will be using the Yellow Taxi Trip Records for January 2024 - June 2024 NOT the entire year of data Parquet Files from the New York City Taxi Data found here:
