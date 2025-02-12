@@ -1,0 +1,40 @@
+# Ignore Terraform local directory
+
+**/.terraform/* 
+
+
+
+# Ignore Terraform state files
+
+*.tfstate
+
+*.tfstate.backup
+
+
+
+# Ignore Terraform plan files
+
+*.tfplan
+
+
+
+# Ignore variable files (if sensitive)
+
+*.tfvars
+
+*.tfvars.json
+
+
+
+# Ignore override files
+
+*.tfoverride
+
+
+
+# Ignore CLI configuration file
+
+.terraformrc
+
+# Ignore JSON files inside the my_keys folder
+my_keys/*.json
