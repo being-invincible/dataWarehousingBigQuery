@@ -6,7 +6,20 @@ https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 
 ## BIG QUERY SETUP:
 Create an external table using the Yellow Taxi Trip Records.
+
+```sql
+CREATE OR REPLACE EXTERNAL TABLE `demo_dataset.nyc_trip_2025`
+  OPTIONS (
+  format = 'PARQUET',
+  uris = ['gs://valiant-airlock-448314-t1-terraform-demo/yellow_tripdata_2024-*.parquet']);
+```
+
 Create a (regular/materialized) table in BQ using the Yellow Taxi Trip Records (do not partition or cluster this table).
+
+```
+CREATE OR REPLACE TABLE `demo_dataset.normal_table` AS
+SELECT * FROM `demo_dataset.nyc_trip_2025`;
+```
 
 ## Question 1:
 Question 1: What is count of records for the 2024 Yellow Taxi Data?
